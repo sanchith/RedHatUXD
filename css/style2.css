@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+
+body {
+    background-color:  #ededed;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Overpass', sans-serif;
+}
+
+/*.openShiftcontainer {
+  position: relative;
+  top: 50;
+  left: 50;
+}*/
+
+.openShiftcontainer {
+  height: 70%;
+  width: 50%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 1px 2px 1px rgba(0,0,0,.3);
+  margin: 0 auto;
+  position: relative;
+  /*top: 50%;*/
+  transform: translateY(35%);
+}
+
+.container {
+    width: 100%;
+    /*max-width: 1024px;*/
+    margin: 0 auto;
+}
+.header {
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;*/
+    background: #c00;
+    background: -webkit-linear-gradient(top, #c00 0%,#470000 100%);
+    /*background: #cc0a4a;
+    background: -webkit-linear-gradient(top, #cc0a4a 0%,#ff0073 100%);*/
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    height: 56px;
+    /*opacity: .8;*/
+    /*box-shadow: 0 1px 3px rgba(0,0,0,.75);*/
+}
+.navigation {
+    height: 56px;
+    display: flex; /* make this a flexbox container */
+    justify-content: space-between; /* place our items as far apart from each other as possible */
+    align-items: center; /* vertically align items */
+}
+
+.brand {
+    /*color: transparent;
+    background: url(../images/z.png) no-repeat top left;
+    background-size: contain;
+    height: 60px;
+    width: 60px;*/
+    color: white;
+    float: left;
+    margin-left: 3%;
+    /*overflow: hidden;*/
+}
+.menu {
+    display: flex;
+    align-items: stretch;
+    height: 56px;
+}
+.menu-link {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: white;
+    border-left: 1px solid white;
+
+}
+.menu-link:hover {
+    background: -webkit-radial-gradient(center, #c00 0%,#470000 100%);
+    color: white;
+}
+.active {
+  background: -webkit-radial-gradient(center, #c00 0%,#470000 100%);
+  /*background: -webkit-radial-gradient(top, #cc0a4a 0%,#ff0073 100%);*/
+}
+
+.main-container {
+  width: 95%;
+  text-align: left;
+  margin: 5% auto;
+}
+
+.main-content {
+    margin-bottom: 50px;
+}
+
+.main-headline {
+    font-size: 1.2em;
+    font-weight: bold;
+    /*color: #bbb;*/
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.main-text {
+  /*color: #bbb;*/
+  margin-top: 1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+/*.column-container {
+    display: flex;
+    margin: 30px -10px;
+}*/
+.column {
+    /*flex: 1 1 50%;*/
+    float: left;
+    width: 40%;
+    /*padding: 0 10px;*/
+}
+.column2 {
+  /*width: 50%;*/
+  /*padding-left: 60px;*/
+}
+
+.case-title, .case-details, .case-button {
+  margin-top: 1.2rem;
+}
+.case-title {
+  font-weight: bold;
+}
+/*.case-title-button {
+  margin-top: 1.5rem;
+}*/
+.case-details {
+  color: #bbb;
+}
+.case-button {
+  color: white;
+  font-size: .9rem;
+  background-color: green;
+  border: 0;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
