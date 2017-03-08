@@ -6732,11 +6732,6 @@ h6,
 p,
 a {
   font-family: 'Overpass', sans-serif;
-}
-.background-container {
-  height: 100vh;
-  width: 100%;
-  padding: 20.25em 20.6875em;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.2px, transparent 1.2px, transparent 100%);
   background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.2px, transparent 1.2px, transparent 100%);
   background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.2px, transparent 1.2px, transparent 100%);
@@ -6745,33 +6740,34 @@ a {
   -moz-background-size: 20px 20px;
   background-size: 20px 20px;
 }
-.panel {
-  height: 250px;
-  width: 250px;
+.panel-custom {
+  height: 163px;
   border-radius: 0;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
+  margin-top: 200px;
 }
-.panel-default > .panel-heading {
+.panel-custom .panel-heading {
   background-color: #c00;
-  height: 60px;
+  height: 48px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
 }
-.panel-title {
+.panel-custom .panel-title {
   color: white;
   float: left;
-  width: 40%;
+  font-size: 12px;
+  width: 70%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-.panel-number {
+.panel-custom .panel-number {
   color: white;
+  font-size: 12px;
   float: right;
-  width: 15%;
-  padding: 3px 2px;
+  width: 17%;
+  padding: 2px 2px;
   background-color: #470000;
+  opacity: .8;
   text-align: center;
   position: relative;
   top: 50%;
