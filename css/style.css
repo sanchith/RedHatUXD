@@ -6749,6 +6749,7 @@ a {
 .panel-custom .panel-heading {
   background-color: #c00;
   height: 48px;
+  border-radius: 0;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
 }
 .panel-custom .panel-title {
